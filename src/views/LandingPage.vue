@@ -7,10 +7,11 @@
 
         <div class="carousel-caption-overlay">
             <div class="content animate__animated animate__slideInDown">
-                <h1>Welcome to Scrutz</h1>
-                <h6>Do you have a campaign and you do not know how to go about it ? <br>Trust us with your campaign and we will give you the very best experience.</h6>
+                <h1 class="mb-3">Welcome to <strong>Scrutz</strong></h1>
+                <h6>Do you have a campaign and you do not know how to go about it ?</h6>
+                    <h6>Trust us with your campaign and we will give you the very best experience.</h6>
             </div>
-            <router-link to="/login" class="btn custom-btn btn-lg  animate__animated animate__slideInUp mt-4">Get Started</router-link>
+            <router-link to="/login" class="btn custom-btn btn-lg mt-4 skill">Get Started</router-link>
         </div>
     </div>
 
@@ -24,14 +25,7 @@ export default {
         return {
 
             images: [
-                '/images/campaign12.png',
-                '/images/campaign11.png',
-                '/images/campaign10.avif',
-                '/images/campaign2.avif',
-                '/images/campaign3.avif',
-                '/images/campaign5.jpg',
-                '/images/campaign7.avif',
-                '/images/campaign9.avif'
+                '/images/newImg.jpg',
             ],
             currentIndex: 0,
             intervalTime: 2000,
@@ -88,7 +82,7 @@ export default {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
     color: white;
     text-align: center;
     /* border: 1px solid aqua; */
@@ -96,7 +90,7 @@ export default {
 }
 
 .carousel-caption-overlay>div {
-    margin-top: 290px;
+    margin-top: 220px;
 }
 
 .btn.custom-btn:hover {
@@ -108,6 +102,27 @@ export default {
 .btn.custom-btn {
     background: #247B7B;
     color: white;
+}
+.skill {
+    background: #6a11cb;
+    padding: 10px 20px;
+    border-radius:20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    animation: pop 2s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(1);
+    } 
+    to {
+        transform: scale(1.1);
+    }
+}
+h6 {
+    line-height: 2;
+    width: 50%;
+    margin: 0 auto;
 }
 
 

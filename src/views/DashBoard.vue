@@ -19,8 +19,11 @@
         <!-- Logo and Text -->
         <img src="/image/image 16 (2).png" alt="image logo" class="photo" />
         <div class="bigtech">
-          Big Tech
-          <img src="/image/mdi_chevron-down (1).png" alt="chevron icon" />
+          BigTech
+          <a href="/">
+            <img src="/images/signout.png" height="25px" width="25px" alt="chevron icon" title="Signout" />
+          </a>
+            
         </div>
 
         <!-- Dots Vertical Menu with Dropdown -->
@@ -41,9 +44,9 @@
               <!-- <v-list-item-title>Logo</v-list-item-title> -->
             </v-list-item>
             <v-list-item>
-              Big Tech
-              <img src="/image/mdi_chevron-down (1).png" alt="chevron icon" class="chevron-dropdown" />
-              <!-- <v-list-item-title>Chevron Icon</v-list-item-title> -->
+              <a href="/">
+            SignOut
+          </a>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -53,7 +56,7 @@
 
       <v-navigation-drawer v-model="sidebarMenu" :location="$vuetify.display.mobile ? 'left' : undefined" temporary>
         <v-toolbar-title>
-          <RouterLink to="/">
+          <RouterLink to="/dashboard/overview">
             <img src="/image/arcticons_google_messages.png" class="img1" />
             <img src="/image/Scrutz.png" class="img2" />
           </RouterLink>
@@ -218,6 +221,9 @@ export default {
 
 .photo {
   margin-right: 10px;
+}
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {

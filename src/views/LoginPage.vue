@@ -23,9 +23,12 @@
                     <router-link to="/signup" class="btn-link">Create an Account</router-link>
                 </div>
             </form>
-            <div class="mt-3 text-success text-center" v-if="successMessage">
+            <div class="mt-3 text-success text-center fs-5" v-if="successMessage">
                 {{ successMessage }}
             </div>
+            <p class="text-danger my-3 text-center">This is a test login page.</p>
+               <p class="text-dark text-center"> Test email- test@gmail.com</p>
+                <p class="text-dark text-center">Test password - !Password123</p>
         </div>
     </div>
 </template>

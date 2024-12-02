@@ -1,25 +1,28 @@
 <template>
     <div class="d-flex align-items-center justify-content-center vh-100 my-5">
         <div class="form-container animated-form p-4 rounded shadow">
-            <h5 class="text-center mb-4">SIGNUP</h5>
+            <h5 class="text-center mt-5 mb-3">SIGNUP</h5>
 
             <form @submit.prevent="handleSignup">
-                <!-- Name Field -->
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input v-model="formData.name" type="text" id="name" class="form-control" @blur="validateName"
+           
+
+                    <!-- Name Field -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input v-model="formData.name" type="text" id="name" class="form-control w-100" @blur="validateName"
                         placeholder="Enter your name" />
-                    <div class="text-danger" v-if="errors.name">{{ errors.name }}</div>
-                </div>
-
-                <!-- Email Field -->
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input v-model="formData.email" type="email" id="email" class="form-control" @blur="validateEmail"
+                        <div class="text-danger" v-if="errors.name">{{ errors.name }}</div>
+                    </div>
+                    
+                    <!-- Email Field -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input v-model="formData.email" type="email" id="email" class="form-control w-100" @blur="validateEmail"
                         placeholder="email@gmail.com" />
-                    <div class="text-danger" v-if="errors.email">{{ errors.email }}</div>
-                </div>
-
+                        <div class="text-danger" v-if="errors.email">{{ errors.email }}</div>
+                    </div>
+                    
+      
                 <!-- Password Field -->
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
@@ -211,7 +214,7 @@ export default {
 <style scoped>
 .form-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
@@ -234,6 +237,7 @@ export default {
     text-decoration: none;
     font-weight: bold;
 }
+
 
 .btn-link:hover {
     text-decoration: underline;

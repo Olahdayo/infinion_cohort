@@ -338,6 +338,9 @@ export default {
   border-color: #247b7b;
   box-shadow: 0 0 0 0.25rem rgba(36, 123, 123, 0.25);
 }
+.card-title {
+  color:#247b7b;
+}
 
 .is-invalid {
   border-color: #dc3545;
